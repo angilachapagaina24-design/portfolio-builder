@@ -1,5 +1,7 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "tanstackstart"
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
